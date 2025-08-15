@@ -1,0 +1,202 @@
+body{
+    background: #f7e0c3;
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* base */
+.recipe {
+  max-width: 700px;
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+}
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.description {
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+/* Preparation time */
+.prep-time {
+  background: #fff0f5;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+}
+.prep-time h2 {
+  font-size: 1.2rem;
+  color: #7b284f;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.prep-time ul {
+  list-style: disc;
+  padding: 1.5;
+  margin: 0;
+
+}
+.prep-time li {
+  margin: 0.4rem;
+}
+.prep-time strong {
+  font-weight: 600;
+}
+/* Ingridients */
+.ingredients ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.instructions ol {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.instructions strong {
+  color: #7b284f;
+}
+.ingredients h2,
+.instructions h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.4rem;
+  color: #854632; /* темно-коричневий */
+  margin-bottom: 0.8rem;
+}
+.instructions {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+.ingredients li {
+  margin-bottom: 0.4rem;
+}
+.instructions li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.instructions strong {
+  color: #854632;
+}
+/* Nutrion */
+.nutrition {
+  border-top: 1px solid #ddd; /* сіра лінія зверху */
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.nutrition h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.4rem;
+  color: #854632; /* темно-коричневий */
+  margin-bottom: 0.8rem;
+}
+.nutrition p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+/* tablitsa */
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition td {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.nutrition td:first-child {
+  color: #666; /* сіруватий для назви */
+}
+
+.nutrition td:last-child {
+  font-weight: 600;
+  color: #854632;
+}
+/* ========= АДАПТИВНІ СТИЛІ ========= */
+
+/* Планшети та менше (до 768px) */
+@media (max-width: 768px) {
+  .recipe {
+    padding: 1.2rem;
+    border-radius: 0; /* щоб на мобільному було без білих полів з боків */
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .prep-time,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    margin-top: 1.5rem;
+  }
+
+  /* Таблиця у Nutrition на мобільному */
+  .nutrition table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Телефони (до 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Зменшення відступів у списках */
+  .prep-time ul,
+  .ingredients ul,
+  .instructions ol {
+    padding-left: 1.2rem;
+  }
+
+  .prep-time li,
+  .ingredients li,
+  .instructions li {
+    font-size: 0.9rem;
+  }
+
+  /* Зменшення фото */
+  .recipe-image {
+    border-radius: 0;
+  }
+}
+
+/* Великі екрани (1440px і більше) */
+@media (min-width: 1440px) {
+  .recipe {
+    max-width: 720px; /* фіксуємо зручну ширину */
+    margin: 2rem auto;
+  }
+}
+
+
