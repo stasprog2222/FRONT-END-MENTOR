@@ -1,0 +1,99 @@
+body{
+    background-color: hsl(0, 0%, 20%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* займає всю висоту екрана */
+    margin: 0;
+    color: #fff;
+}
+.card {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+}
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* коло */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.card h2 {
+  margin: 0;
+  font-size: 1.4em;
+}
+.location {
+  color: #c5f82a; /* зелений текст */
+  font-weight: bold;
+  margin: 8px 0;
+}
+.bio {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* Кнопки */
+
+.card .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .links p {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 20%);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  margin: 0;
+}
+.card .links p:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+/* Mobile: до 375px */
+@media (max-width: 375px) {
+  .card {
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+/* Desktop: від 1440px */
+@media (min-width: 1440px) {
+  .card {
+    padding: 40px;
+    max-width: 400px;
+  }
+
+  .card h2 {
+    font-size: 26px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .links p {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
